@@ -6,4 +6,5 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/var/www/html
+      - ./dap.lua:/root/.config/nvim/lua/plugins/dap.lua
     command: ['tail', '-f', '/dev/null']
